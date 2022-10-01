@@ -16,7 +16,7 @@ function App() {
 
     <>
 
-      <CatergoryContext.Provider value='Laptop'>
+      <CatergoryContext.Provider value={count}>
 
         <Header
           count={count}
