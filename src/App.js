@@ -10,18 +10,15 @@ export const CatergoryContext = createContext();
 function App() {
 
   // siblings er moddhe data pass korte hole, state ta k higher order a rakhte hbe
-  const [count, setCount] = useState(0)
+  const [category, setCategory] = useState(0)
 
   return (
 
     <>
 
-      <CatergoryContext.Provider value={count}>
+      <CatergoryContext.Provider value={[category, setCategory]}>
 
-        <Header
-          count={count}
-          setCount={setCount}
-        ></Header> <br />
+        <Header></Header> <br />
 
 
         <Home></Home>
